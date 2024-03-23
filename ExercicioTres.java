@@ -1,4 +1,4 @@
-import dominio.Vendedor;
+import dominio.Funcionario;
 
 public class ExercicioTres {
     public static void executar() {
@@ -10,7 +10,7 @@ public class ExercicioTres {
         double b = Prompt.lerDecimal("Digite seu salário fixo: ");
         double c = Prompt.lerDecimal("Digite seu total de vendas: ");
 
-        Vendedor vendedor = new Vendedor(a, b, c);
+        Funcionario vendedor = new Funcionario(a, b, c);
         double salario = vendedor.salario();
 
         System.out.printf("O salário final do funcionário %s é de R$ %.2f\n", a, salario);
