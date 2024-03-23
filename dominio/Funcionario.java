@@ -21,6 +21,7 @@ public class Funcionario {
     public double[] s;
     public double[] ns;
     public double salarioMinimo;
+    public int reajuste;
 
     public Funcionario(int tamanho) {
         n = new String[tamanho];
@@ -39,6 +40,11 @@ public class Funcionario {
         } else {
             return s[indice] * 1.1; 
         }
+    }
+    
+    public double novoS2(int indice) {
+        ns[indice] = s[indice] * (1 + (reajuste / 100.0));
+        return ns[indice];
     }
     
 }
