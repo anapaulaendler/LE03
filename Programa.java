@@ -1,5 +1,5 @@
 public class Programa {
     public static void main(String[] args) {
-        ExercicioQuinze.executar();
+        ExercicioDezesseis.executar();
     }
 }
