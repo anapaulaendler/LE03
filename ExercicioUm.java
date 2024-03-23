@@ -16,6 +16,8 @@ public class ExercicioUm {
             media += alunoUm.notas[i];
         }
 
-        System.out.printf("A média do aluno %s é: %.2f", alunoUm.nome, (media/3));
+        System.out.printf("A média do aluno %s é: %.2f\n", alunoUm.nome, (media/3));
+        Prompt.separador();
+        
     }
 }

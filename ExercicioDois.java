@@ -12,6 +12,7 @@ public class ExercicioDois {
         double consumo = automovel.cm();
 
         System.out.printf("O consumo médio é de %.2f km/l\n", consumo);
+        Prompt.separador();
 
     }
 }
