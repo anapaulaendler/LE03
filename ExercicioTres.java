@@ -14,6 +14,7 @@ public class ExercicioTres {
         double salario = vendedor.salario();
 
         System.out.printf("O salário final do funcionário %s é de R$ %.2f\n", a, salario);
+        Prompt.separador();
 
     }
 }
