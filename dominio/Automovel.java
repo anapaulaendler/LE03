@@ -14,6 +14,30 @@ public class Automovel {
         return distancia / litros;
     }
 
+    public String tipoCombustivel;
+    public double valor;
+
+    public Automovel() {}
+
+    public Automovel(String tipoCombustivel, double valor) {
+        this.tipoCombustivel = tipoCombustivel;
+        this.valor = valor;
+    }
+
+    public double calcularDesconto() {
+        double desconto = 0;
+        
+        if ("alcool".equalsIgnoreCase(tipoCombustivel)) {
+            desconto = 0.25 * valor;
+        } else if ("gasolina".equalsIgnoreCase(tipoCombustivel)) {
+            desconto = 0.21 * valor;
+        } else if ("diesel".equalsIgnoreCase(tipoCombustivel)) {
+            desconto = 0.14 * valor;
+        }
+    
+        return desconto;
+    }
+    
 
 }
 
