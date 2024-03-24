@@ -1,3 +1,5 @@
+import dominio.Funcionario;
+
 public class ExercicioVinte {
     public static void executar() {
         /* A escola “APRENDER” faz o pagamento de seus professores por hora/aula. Faça um programa
@@ -6,6 +8,13 @@ public class ExercicioVinte {
         Professor Nível 2 R$17,00 por hora/aula
         Professor Nível 3 R$25,00 por hora/aula */
 
-        
+        Funcionario professor = new Funcionario();
+        professor.horas = Prompt.lerInteiro("Informe a quantidade de horas trabalhadas: ");
+        professor.nivel = Prompt.lerInteiro("Informe o nível do professor (1, 2, 3): ");
+        double salario = professor.pagamento();
+
+        System.out.printf("O salário do professor é de: R$ %.2f\n", salario);
+        Prompt.separador();
+
     }
 }

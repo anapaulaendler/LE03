@@ -19,6 +19,8 @@ public class Funcionario {
         return conta;
     }
 
+    //
+
     public String[] n;
     public double[] s;
     public double[] ns;
@@ -46,9 +48,29 @@ public class Funcionario {
         }
     }
     
+    //
+
     public double novoS2(int indice) {
         ns[indice] = s[indice] * (1 + (reajuste / 100.0));
         return ns[indice];
     }
+
+    //
+
+        public int nivel;
+        public int horas;
+        public double salario;
     
-}
+        public double pagamento() {
+            if (nivel == 1) {
+                salario = 12.0 * horas;
+            } else if (nivel == 2) {
+                salario = 17.0 * horas;
+            } else if (nivel == 3) {
+                salario = 25.0 * horas;
+            } else {
+                System.out.println("Nível de professor inválido.");
+            }
+            return salario;
+        }
+    }
