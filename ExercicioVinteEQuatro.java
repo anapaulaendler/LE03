@@ -21,6 +21,7 @@ public class ExercicioVinteEQuatro {
         }
 
         media = (alunoCC.notas[0] * 2 + alunoCC.notas[1] * 3 + alunoCC.notas[2] * 5) / 10;
+        alunoCC.media = media;
 
         System.out.printf("A média do aluno %s é: %.2f\n", alunoCC.nome, media);
         Prompt.separador();

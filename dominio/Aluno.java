@@ -5,6 +5,8 @@ public class Aluno {
     public String matricula;
     public String nome;
     public double[] notas;
+    
+    public double media;
 
     //Método construtor
     public Aluno(){
