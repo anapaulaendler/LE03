@@ -24,5 +24,26 @@ public class Aluno {
         this.matricula = matricula;
     }
 
+    public static char classificacao(double media) {
+        if (media >= 8 && media <= 10) {
+            return 'A';
+        } else if (media >= 7 && media < 8) {
+            return 'B';
+        } else if (media >= 6 && media < 7) {
+            return 'C';
+        } else if (media >= 5 && media < 6) {
+            return 'D';
+        } else {
+            return 'R';
+        }
+    }
+
+    public static void informacoes(Aluno aluno) {
+        System.out.println("\nInformações do aluno:");
+        System.out.println("Nome: " + aluno.nome);
+        System.out.println("Número de matrícula: " + aluno.matricula);
+        System.out.println("Nota Final: " + aluno.media);
+        System.out.println("Classificação: " + aluno.classificacao);
+    }
 
 }

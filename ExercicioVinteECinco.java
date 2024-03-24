@@ -1,21 +1,24 @@
 import dominio.*;
 
 public class ExercicioVinteECinco {
+
     public static void executar() {
+        Aluno aluno = new Aluno();
+        aluno.nome = Prompt.lerLinha("Digite o nome do aluno: ");
+        aluno.matricula = Prompt.lerLinha("Digite o número de matrícula: ");
 
-        /* Dado o nome de um estudante, com o respectivo número de matrícula e as três notas acima
-        mencionadas, desenvolva um programa para calcular a nota final e a classificação de cada
-        estudante. A classificação é dada conforme a lista abaixo:
-        Nota Final Classificação
-        [8,10] A
-        [7,8] B
-        [6,7] C
-        [5,6] D
-        [0,5] R
-        Imprima o nome do estudante, com o seu número, nota final e classificação. */
+        aluno.notas = new double[3];
 
-        ExercicioVinteEQuatro.executar();
-        ExercicioVinteEQuatro.alunoCC.classificacao = 0;
+        for (int i = 0; i < 3; i++) {
+            aluno.notas[i] = Prompt.lerDecimal("Digite a nota " + (i + 1) + ": ");
+        }
 
+        aluno.media = (aluno.notas[0] * 2 + aluno.notas[1] * 3 + aluno.notas[2] * 5) / 10.0;
+        aluno.classificacao = Aluno.classificacao(aluno.media);
+
+        System.out.printf("Nome: %s\nNúmero de matricula: %s\nNota final: %.2f\nClassificação: %c\n", aluno.nome, aluno.matricula, aluno.media, aluno.classificacao);
+        Prompt.separador();
+        
     }
 }
+
