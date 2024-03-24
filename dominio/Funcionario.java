@@ -5,6 +5,8 @@ public class Funcionario {
     public String nome;
     public double salf;
     public double totv;
+    public char sexo;
+    public int idade;
 
     public Funcionario(String nome, double salf, double totv) {
         this.nome = nome;
@@ -28,6 +30,8 @@ public class Funcionario {
         s = new double[tamanho];
         ns = new double[tamanho];
     }
+
+    public Funcionario() {}
 
     public double novoS(int indice) {
 
