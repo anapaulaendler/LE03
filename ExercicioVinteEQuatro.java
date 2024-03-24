@@ -1,6 +1,8 @@
 import dominio.Aluno;
 
 public class ExercicioVinteEQuatro {
+    public static Object alunoCC;
+
     public static void executar() {
         /*  Em um curso de Ciência da Computação a nota do estudante é calculada a partir de três notas
         atribuídas, respectivamente, a um trabalho de laboratório, a uma avaliação semestral e a um exame

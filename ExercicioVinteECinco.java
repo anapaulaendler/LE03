@@ -15,7 +15,7 @@ public class ExercicioVinteECinco {
         Imprima o nome do estudante, com o seu número, nota final e classificação. */
 
         ExercicioVinteEQuatro.executar();
-        
+        ExercicioVinteEQuatro.alunoCC.classificacao = 0;
 
     }
 }
