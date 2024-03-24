@@ -7,6 +7,7 @@ public class Aluno {
     public double[] notas;
     
     public double media;
+    public char classificacao;
 
     //Método construtor
     public Aluno(){
