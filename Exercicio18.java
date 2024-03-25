@@ -30,7 +30,6 @@ public class Exercicio18 {
         }
 
         System.out.printf("O novo salário de %s, conforme seu sexo e idade, é de: R$ %.2f\n", funcionario.nome, funcionario.salf);
-        leitor.close();
         Prompt.separador();
 
     }

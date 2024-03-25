@@ -46,7 +46,5 @@ public class Exercicio13 {
         System.out.println("Total de pessoas aptas: " + totalAptas);
         System.out.println("Total de pessoas não aptas: " + totalNaoAptas);
         Prompt.separador();
-        
-        leitor.close();
     }
 }
