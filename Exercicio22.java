@@ -1,6 +1,6 @@
 import dominio.Consumo;
 
-public class ExercicioVinteEDois {
+public class Exercicio22 {
     public static void executar() {
         /*  Faça um programa que calcule o valor da conta de luz de uma pessoa. Sabe-se que o cálculo
         da conta de luz segue a tabela abaixo:
