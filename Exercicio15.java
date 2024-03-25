@@ -1,6 +1,6 @@
 import dominio.*;
 
-public class ExercicioQuinze {
+public class Exercicio15 {
     public static void executar() {
         /* . A concessionária de veículos “CARANGO” está vendendo os seus veículos com desconto. Faça
         um programa que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O desconto
