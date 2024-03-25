@@ -1,6 +1,6 @@
 import dominio.*;
 
-public class ExercicioDezesseis {
+public class Exercicio16 {
 
     public static void executar() {
         /* Escrever um programa para uma empresa que decide dar um reajuste a seus 584 funcionários
