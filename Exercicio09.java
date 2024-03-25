@@ -1,16 +1,19 @@
+import dominio.Numero;
+
 public class Exercicio09 {
     public static void executar() {
-        int contador = 0;
+        /* Ler 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive) 
+        e 150 (inclusive).  */
+
+        Numero numero = new Numero();
+        int a = 0;
+        
         
         for (int i = 0; i < 80; i++) {
-            int numero = Prompt.lerInteiro("Digite um número: ");
-            
-            if (numero >= 10 && numero <= 150) {
-                contador++;
-            }
+            a = numero.contador();
         }
         
-        System.out.println("Quantidade de números no intervalo [10, 150]: " + contador);
+        System.out.println("Quantidade de números no intervalo [10, 150]: " + a);
 
     }
 }

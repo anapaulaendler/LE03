@@ -14,7 +14,7 @@ public class Pessoa {
         idade = new int[tamanho];
         saude = new boolean[tamanho];
     }
-
+    
     public boolean apto(int indice) {
         return (idade[indice] >= 18 && idade[indice] <= 30 && saude[indice]);
     }
