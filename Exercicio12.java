@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import dominio.Concessionaria;
+
 public class Exercicio12 {
     public static void executar() {
         /*  A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com
@@ -9,32 +11,22 @@ public class Exercicio12 {
         até que a resposta seja: “(N) Não”. Informar total de carros com ano até 2000 e total geral. */
 
         char opcao = 'S';
-        int ano;
-        double preco;
+        Concessionaria concessionaria = new Concessionaria();
         Scanner scanner = new Scanner(System.in);
-        int c2000 = 0;
-        int cg = 0;
+        concessionaria.c2000 = 0;
+        concessionaria.cg = 0;
 
         while (opcao != 'N') {
-            ano = Prompt.lerInteiro("Informe o ano do carro: ");
-            preco = Prompt.lerDecimal("Informe o valor inicial: ");
 
-            if (ano <= 2000) {
-                preco = preco * 0.88;
-                c2000 += 1;
-                cg += 1;
-            } else {
-                preco = preco * 0.93;
-                cg += 1;
-            }
+            concessionaria.ano = Prompt.lerInteiro("Informe o ano do carro: ");
+            concessionaria.preco = Prompt.lerDecimal("Informe o valor inicial: ");
+            concessionaria.desconto(concessionaria.ano, concessionaria.preco);
 
-            System.out.printf("Preço atualizado: R$ %.2f\n", preco);
             System.out.println("Deseja continuar? Digite 'n' ou 'N' para sair: ");
             opcao = scanner.nextLine().toUpperCase().charAt(0);
         }
 
-        System.out.printf("O total de carros até o ano 2000: %d.\nTotal de carros: %d.\n", c2000, cg);
+        System.out.printf("O total de carros até o ano 2000: %d.\nTotal de carros: %d.\n", concessionaria.c2000, concessionaria.cg);
         Prompt.separador();
-        scanner.close();
     }
 }
