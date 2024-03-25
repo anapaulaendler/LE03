@@ -1,6 +1,6 @@
 import dominio.Nadador;
 
-public class ExercicioVinteEUm {
+public class Exercicio21 {
     public static void executar() {
         /* Elabore um programa que, dada a idade de um nadador. Classifique-o em uma das seguintes categorias:
         Infantil A = 5 - 7 anos
