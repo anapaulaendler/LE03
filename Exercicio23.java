@@ -18,7 +18,6 @@ public class Exercicio23 {
 
         System.out.printf("Peso Ideal: %.2f\n", pessoa.p);
         Prompt.separador();
-        leitor.close();
         
     }
 }

@@ -14,5 +14,7 @@ public class Exercicio22 {
         consumo.consumo = Prompt.lerInteiro("Digite seu consumo, em KW/h: ");
         consumo.valor();
 
+        Prompt.separador();
+
     }
 }
