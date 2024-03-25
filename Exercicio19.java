@@ -1,6 +1,6 @@
 import dominio.Triangulo;
 
-public class ExercicioDezenove {
+public class Exercicio19 {
     public static void executar() {
         /* . Escrever um programa que leia três valores inteiros e verifique se eles podem ser os lados de
         um triângulo. Se forem, informar qual o tipo de triângulo que eles formam: equilátero, isóscele ou
