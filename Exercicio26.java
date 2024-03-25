@@ -1,6 +1,6 @@
 import dominio.Seguradora;
 
-public class ExercicioVinteESeis {
+public class Exercicio26 {
     public static void executar() {
         /* . Uma seguradora possui nove categorias de seguro baseadas na idade e ocupação do segurado.
         Somente pessoas com pelo menos 17 anos e não mais que 70 anos podem adquirir apólices de
