@@ -1,6 +1,6 @@
 import dominio.*;
 
-public class ExercicioSeis {
+public class Exercicio06 {
     public static void executar() {
         /*  Faça um programa que receba o preço de custo de um produto e mostre o valor de venda. 
         Sabese que o preço de custo receberá um acréscimo de acordo com um percentual informado pelo
