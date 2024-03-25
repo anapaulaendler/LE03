@@ -1,6 +1,6 @@
 import dominio.Funcionario;
 
-public class ExercicioVinte {
+public class Exercicio20 {
     public static void executar() {
         /* A escola “APRENDER” faz o pagamento de seus professores por hora/aula. Faça um programa
         que calcule e exiba o salário de um professor. Sabe-se que o valor da hora/aula segue a tabela abaixo:
