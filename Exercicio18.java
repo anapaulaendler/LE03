@@ -1,7 +1,7 @@
 import dominio.Funcionario;
 import java.util.*;
 
-public class ExercicioDezoito {
+public class Exercicio18 {
     public static void executar() {
         /* . Faça um programa que receba o nome a idade, o sexo e salário fixo de um funcionário. Mostre
         o nome e o salário líquido acrescido do abono conforme o sexo e a idade: */
