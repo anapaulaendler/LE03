@@ -1,7 +1,7 @@
 import dominio.Pessoa;
 import java.util.Scanner;
 
-public class ExercicioOnze {
+public class Exercicio11 {
     public static void executar() {
     /* Escrever um programa que leia o nome e o sexo de 56 pessoas e informe o nome e se ela é
     homem ou mulher. No final informe total de homens e de mulheres. */
