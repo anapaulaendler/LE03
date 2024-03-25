@@ -1,6 +1,6 @@
 import dominio.*;
 
-public class ExercicioUm {
+public class Exercicio01 {
     public static void executar() {
         /* Escrever um programa que leia o nome de um aluno e as notas das três provas que ele obteve
         no semestre. No final informar o nome do aluno e a sua média (aritmética). */
