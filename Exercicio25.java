@@ -1,6 +1,6 @@
 import dominio.*;
 
-public class ExercicioVinteECinco {
+public class Exercicio25 {
 
     public static void executar() {
         Aluno aluno = new Aluno();
