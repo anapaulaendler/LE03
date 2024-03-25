@@ -1,6 +1,6 @@
 import dominio.Aluno;
 
-public class ExercicioVinteEQuatro {
+public class Exercicio24 {
     
     public static void executar() {
         /*  Em um curso de Ciência da Computação a nota do estudante é calculada a partir de três notas
