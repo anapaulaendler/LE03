@@ -7,6 +7,7 @@ public class Exercicio03 {
         efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre
         suas vendas efetuadas, informar o seu nome, o salário fixo e salário no final do mês. */
 
+        
         String a = Prompt.lerLinha("Digite o nome do vendedor: ");
         double b = Prompt.lerDecimal("Digite seu salário fixo: ");
         double c = Prompt.lerDecimal("Digite seu total de vendas: ");

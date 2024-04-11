@@ -7,6 +7,7 @@ public class Exercicio17 {
         reajustado. Escrever o nome do funcionário, o reajuste e seu novo salário. Calcule quanto à
         empresa vai aumentar sua folha de pagamento. */
 
+        
         int n = Prompt.lerInteiro("Informe o número de funcionários: ");
         Funcionario funcionario = new Funcionario(n);
 

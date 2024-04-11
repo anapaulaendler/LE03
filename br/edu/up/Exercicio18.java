@@ -8,6 +8,7 @@ public class Exercicio18 {
         /* . Faça um programa que receba o nome a idade, o sexo e salário fixo de um funcionário. Mostre
         o nome e o salário líquido acrescido do abono conforme o sexo e a idade: */
 
+        
         Scanner leitor = new Scanner(System.in);
         Funcionario funcionario = new Funcionario();
 

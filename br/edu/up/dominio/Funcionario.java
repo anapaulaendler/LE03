@@ -2,11 +2,20 @@ package br.edu.up.dominio;
 
 public class Funcionario {
     
-    public String nome;
-    public double salf;
-    public double totv;
-    public char sexo;
-    public int idade;
+    private String nome;
+    private double salf;
+    private double totv;
+    private char sexo;
+    private int idade;
+    private String[] n;
+    private double[] s;
+    private double[] ns;
+    private double salarioMinimo;
+    private int reajuste;
+    private int nivel;
+    private int horas;
+    private double salario;
+
 
     public Funcionario(String nome, double salf, double totv) {
         this.nome = nome;
@@ -20,12 +29,6 @@ public class Funcionario {
     }
 
     //
-
-    public String[] n;
-    public double[] s;
-    public double[] ns;
-    public double salarioMinimo;
-    public int reajuste;
 
     public Funcionario(int tamanho) {
         n = new String[tamanho];
@@ -56,10 +59,6 @@ public class Funcionario {
     }
 
     //
-
-        public int nivel;
-        public int horas;
-        public double salario;
     
         public double pagamento() {
             if (nivel == 1) {

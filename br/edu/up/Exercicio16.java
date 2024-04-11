@@ -3,6 +3,7 @@ import br.edu.up.dominio.*;
 
 public class Exercicio16 {
 
+    
     public static void executar() {
         /* Escrever um programa para uma empresa que decide dar um reajuste a seus 584 funcionários
         de acordo com os seguintes critérios:
