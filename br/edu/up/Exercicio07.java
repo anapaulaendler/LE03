@@ -9,8 +9,9 @@ public class Exercicio07 {
         de 28% e os impostos 45%. Escrever um programa que leia o custo de fábrica de um carro e informe
         o custo ao consumidor do mesmo. */
 
-        double a = Prompt.lerDecimal("Informe o custo de fábrica, em reais: ");
         Concessionaria consumidor = new Concessionaria();
+        
+        double a = Prompt.lerDecimal("Informe o custo de fábrica, em reais: ");
         double r = consumidor.custoC(a);
 
         System.out.printf("O custo do consumidor é de: R$ %.2f\n", r);
