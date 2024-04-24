@@ -1,29 +1,114 @@
 package br.edu.up.dominio;
 
 public class Pessoa {
-    public String[] nome;
-    public char[] sexo;
-    public int[] idade;
-    public boolean[] saude;
+    private String[] nome;
+    private char[] sexo;
+    private int[] idade;
+    private boolean[] saude;
+
+    // métodos construtores:
 
     public Pessoa() {}
 
     public Pessoa(int tamanho) {
-        nome = new String[tamanho];
-        sexo = new char[tamanho];
-        idade = new int[tamanho];
-        saude = new boolean[tamanho];
+        this.nome = new String[tamanho];
+        this.sexo = new char[tamanho];
+        this.idade = new int[tamanho];
+        this.saude = new boolean[tamanho];
     }
+    
+    // getters e setters:
+
+    public String[] getNome() {
+        return nome;
+    }
+
+    public void setNome(String[] nome) {
+        this.nome = nome;
+    }
+
+    public char[] getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char[] sexo) {
+        this.sexo = sexo;
+    }
+
+    public int[] getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int[] idade) {
+        this.idade = idade;
+    }
+
+    public boolean[] getSaude() {
+        return saude;
+    }
+
+    public void setSaude(boolean[] saude) {
+        this.saude = saude;
+    }
+
+    public char getS() {
+        return s;
+    }
+
+    public void setS(char s) {
+        this.s = s;
+    }
+
+    public double getA() {
+        return a;
+    }
+
+    public void setA(double a) {
+        this.a = a;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public double getP() {
+        return p;
+    }
+
+    public void setP(double p) {
+        this.p = p;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    // funções:
     
     public boolean apto(int indice) {
         return (idade[indice] >= 18 && idade[indice] <= 30 && saude[indice]);
+    }
+
+    public void maiorDeIdade(int idade, int i) {
+        if (idade >= 18) {
+            System.out.printf("Pessoa " + (i + 1) + ": maior de idade!\n");
+        } else {
+            System.out.printf("Pessoa " + (i + 1) + ": menor de idade!\n");
+        }
     }
 
     public char s;
     public double a;
     public int i;
     public double p;
-
     public double peso;
 
     public double pesoIdeal() {
