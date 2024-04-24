@@ -2,7 +2,7 @@ package br.edu.up.dominio;
 
 public class Loja {
 
-    public double ps(double preco, double p) {
+    public double prestacao (double preco, double p) {
         return preco / p;
     }
     
