@@ -8,21 +8,25 @@ public class Exercicio08 {
         Reprovado (media <= 5) e Recuperação (media entre 5.1 a 6.9). */
 
         Aluno aluno = new Aluno();
-        aluno.nome = Prompt.lerLinha("Digite o nome do aluno: ");
+        String nome = Prompt.lerLinha("Digite o nome do aluno: ");
+        aluno.setNome(nome);
+
         double media = 0;
-        aluno.notas = new double[3];
+        double[] notas = new double[3];
+
 
         for (int i = 0; i < 3; i++) {
-            aluno.notas[i] = Prompt.lerDecimal("Digite sua nota: ");
-            media += aluno.notas[i];
+            notas[i] = Prompt.lerDecimal("Digite sua nota: ");
+            aluno.setNotas(notas);
+            media += notas[i];
         }
 
         if ((media / 3) >= 7) {
-            System.out.printf("O aluno %s foi aprovado!\n", aluno.nome);
+            System.out.printf("O aluno %s foi aprovado!\n", aluno.getNome());
         } else if ((media / 3 <= 5)) {
-            System.out.printf("O aluno %s foi reprovado.\n", aluno.nome);
+            System.out.printf("O aluno %s foi reprovado.\n", aluno.getNome());
         } else {
-            System.out.printf("O aluno %s está em recuperação.\n", aluno.nome);
+            System.out.printf("O aluno %s está em recuperação.\n", aluno.getNome());
         }
 
         Prompt.separador();
