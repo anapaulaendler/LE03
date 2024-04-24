@@ -2,8 +2,27 @@ package br.edu.up.dominio;
 
 public class Nadador {
 
-    public int idade;
+    private int idade;
+
+    // métodos construtores:
     
+    public Nadador() {
+    }
+
+    public Nadador(int idade) {
+        this.idade = idade;
+    }
+
+    // getters e setters:
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
     public static void classificarNadador(int idade) {
 
         if (idade >= 5 && idade <= 7) {

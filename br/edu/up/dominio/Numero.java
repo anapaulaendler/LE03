@@ -2,7 +2,7 @@ package br.edu.up.dominio;
 
 public class Numero {
 
-    int contador;
+    private int contador;
 
     public int contador() {
     int numero = Prompt.lerInteiro("Digite um número: ");

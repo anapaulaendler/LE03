@@ -7,17 +7,19 @@ public class Exercicio01 {
         no semestre. No final informar o nome do aluno e a sua média (aritmética). */
 
         Aluno alunoUm = new Aluno();
-        alunoUm.nome = Prompt.lerLinha("Digite o nome do aluno: ");
+        String nome = Prompt.lerLinha("Digite o nome do aluno: ");
+        alunoUm.setNome(nome);
 
-        alunoUm.notas = new double[3];
         double media = 0;
+        double[] nota = new double[3];
 
         for (int i = 0; i < 3; i++) {
-            alunoUm.notas[i] = Prompt.lerDecimal("Digite sua nota: ");
-            media += alunoUm.notas[i];
+            nota[i] = Prompt.lerDecimal("Digite sua nota: ");
+            alunoUm.setNotas(nota);
+            media += media += nota[i];
         }
 
-        System.out.printf("A média do aluno %s é: %.2f\n", alunoUm.nome, (media/3));
+        System.out.printf("A média do aluno %s é: %.2f\n", alunoUm.getNome(), (media/3f));
         Prompt.separador();
         
     }
