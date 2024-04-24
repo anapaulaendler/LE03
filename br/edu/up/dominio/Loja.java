@@ -6,7 +6,7 @@ public class Loja {
         return preco / p;
     }
     
-    public double pv (double preco, double percentual) {
+    public double valorVenda (double preco, double percentual) {
         double p = 1 + (percentual / 100);
         return preco * p;
     }
