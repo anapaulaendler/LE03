@@ -9,7 +9,6 @@ public class Exercicio09 {
         Numero numero = new Numero();
         int a = 0;
         
-        
         for (int i = 0; i < 80; i++) {
             a = numero.contador();
         }

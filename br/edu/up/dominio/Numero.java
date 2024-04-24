@@ -9,8 +9,10 @@ public class Numero {
             
     if (numero >= 10 && numero <= 150) {
         contador++;
+
     }
 
     return contador;
 }
+
 }
