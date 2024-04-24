@@ -9,34 +9,39 @@ public class Exercicio11 {
     homem ou mulher. No final informe total de homens e de mulheres. */
 
     int n = 56;
-    Pessoa pessoas = new Pessoa();
-    pessoas.nome = new String[n];
-    pessoas.sexo = new char[n];
+    Pessoa pessoas = new Pessoa(n);
+    
+    String[] nome = new String[n];
+    char[] sexo = new char[n];
+    int cM = 0;
+    int cF = 0;
+
     Scanner scanner = new Scanner(System.in);
-    int cm = 0;
-    int cf = 0;
 
     for (int i = 0; i < n; i++) {
-        pessoas.nome[i] = Prompt.lerLinha("Digite o nome da pessoa: ");
+        nome[i] = Prompt.lerLinha("Digite o nome da pessoa: ");
+        pessoas.setNome(nome);
+
         System.out.println("Digite o sexo da pessoa (F ou M): ");
-        pessoas.sexo[i] = scanner.nextLine().toUpperCase().charAt(0);
+        sexo[i] = scanner.nextLine().toUpperCase().charAt(0);
+        pessoas.setSexo(sexo);
 
-        if (pessoas.sexo[i] == 'F') {
-            cf += 1;
-        } else if (pessoas.sexo[i] == 'M') {
-            cm += 1;
+        if (sexo[i] == 'F') {
+            cF += 1;
+        } else if (sexo[i] == 'M') {
+            cM += 1;
         }
     }
 
     for (int i = 0; i < n; i++) {
-        if (pessoas.sexo[i] == 'F') {
-            System.out.println("Nome: " + pessoas.nome[i] + " | Mulher");
-        } else if (pessoas.sexo[i] == 'M') {
-            System.out.println("Nome: " + pessoas.nome[i] + " | Homem");
+        if (sexo[i] == 'F') {
+            System.out.println("Nome: " + pessoas.getNome() + " | Mulher");
+        } else if (sexo[i] == 'M') {
+            System.out.println("Nome: " + pessoas.getNome() + " | Homem");
         }
     }
 
-    System.out.println("Quantidade total de homens: " + cm + ". Quantidade total de mulheres: " + cf + ".");
+    System.out.println("Quantidade total de homens: " + cM + ". Quantidade total de mulheres: " + cF + ".");
     Prompt.separador();
 
     scanner.close();
