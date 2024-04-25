@@ -15,14 +15,20 @@ public class Exercicio19 {
         Triângulo Escaleno: aquele que tem os comprimentos de seus três lados diferentes. */
 
         Triangulo triangulo = new Triangulo();
-        triangulo.a = Prompt.lerInteiro("Digite o primeiro valor: ");
-        triangulo.b = Prompt.lerInteiro("Digite o segundo valor: ");
-        triangulo.c = Prompt.lerInteiro("Digite o terceiro valor: ");
 
-        int i = triangulo.verificar(triangulo.a, triangulo.b, triangulo.c);
-        
+        int a = Prompt.lerInteiro("Digite o primeiro valor: ");
+        triangulo.setA(a);
+
+        int b = Prompt.lerInteiro("Digite o segundo valor: ");
+        triangulo.setB(b);
+
+        int c = Prompt.lerInteiro("Digite o terceiro valor: ");
+        triangulo.setC(c);
+
+        int i = triangulo.verificar(triangulo.getA(), triangulo.getB(), triangulo.getC());
+
         if (i == 1) {
-            String tipo = triangulo.lados(triangulo.a, triangulo.b, triangulo.c);
+            String tipo = triangulo.lados(triangulo.getA(), triangulo.getB(), triangulo.getC());
             System.out.println("O triângulo é do tipo: " + tipo);
         } else {
             System.out.println("Não é triângulo.");
