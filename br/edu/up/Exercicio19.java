@@ -3,6 +3,7 @@ import br.edu.up.dominio.Triangulo;
 
 public class Exercicio19 {
     public static void executar() {
+
         /* . Escrever um programa que leia três valores inteiros e verifique se eles podem ser os lados de
         um triângulo. Se forem, informar qual o tipo de triângulo que eles formam: equilátero, isóscele ou
         escaleno.
@@ -19,6 +20,7 @@ public class Exercicio19 {
         triangulo.c = Prompt.lerInteiro("Digite o terceiro valor: ");
 
         int i = triangulo.verificar(triangulo.a, triangulo.b, triangulo.c);
+        
         if (i == 1) {
             String tipo = triangulo.lados(triangulo.a, triangulo.b, triangulo.c);
             System.out.println("O triângulo é do tipo: " + tipo);
