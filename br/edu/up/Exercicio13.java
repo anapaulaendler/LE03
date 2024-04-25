@@ -5,6 +5,7 @@ import br.edu.up.dominio.*;
 
 public class Exercicio13 {
     public static void executar() {
+        
         /*  Escrever um programa que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informe
         se está apta ou não para cumprir o serviço militar obrigatório. Informe os totais. */
 
