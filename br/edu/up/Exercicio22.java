@@ -11,8 +11,13 @@ public class Exercicio22 {
         3 (Indústria) 1,29 */
 
         Consumo consumo = new Consumo();
-        consumo.id = Prompt.lerInteiro("Digite seu ID:\n1 - Residência\n2 - Comércio\n3 - Indústria\n");
-        consumo.consumo = Prompt.lerInteiro("Digite seu consumo, em KW/h: ");
+
+        int id = Prompt.lerInteiro("Digite seu ID:\n1 - Residência\n2 - Comércio\n3 - Indústria\n");
+        consumo.setId(id);
+
+        int c = Prompt.lerInteiro("Digite seu consumo, em KW/h: ");
+        consumo.setConsumo(c);
+        
         consumo.valor();
 
         Prompt.separador();
