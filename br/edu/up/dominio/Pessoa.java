@@ -1,10 +1,17 @@
 package br.edu.up.dominio;
 
 public class Pessoa {
+
     private String[] nome;
     private char[] sexo;
     private int[] idade;
     private boolean[] saude;
+
+    private char s;
+    private double a;
+    private int i;
+    private double p;
+    private double peso;
 
     // métodos construtores:
 
@@ -104,12 +111,6 @@ public class Pessoa {
             System.out.printf("Pessoa " + (i + 1) + ": menor de idade!\n");
         }
     }
-
-    public char s;
-    public double a;
-    public int i;
-    public double p;
-    public double peso;
 
     public double pesoIdeal() {
         if (s == 'F') {
