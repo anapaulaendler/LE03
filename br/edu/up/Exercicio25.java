@@ -5,19 +5,26 @@ public class Exercicio25 {
 
     public static void executar() {
         Aluno aluno = new Aluno();
-        aluno.nome = Prompt.lerLinha("Digite o nome do aluno: ");
-        aluno.matricula = Prompt.lerLinha("Digite o número de matrícula: ");
 
-        aluno.notas = new double[3];
+        String nome = Prompt.lerLinha("Digite o nome do aluno: ");
+        aluno.setNome(nome);
+
+        String matricula = Prompt.lerLinha("Digite o número de matrícula: ");
+        aluno.setMatricula(matricula);
+
+        double[] notas = new double[3];
 
         for (int i = 0; i < 3; i++) {
-            aluno.notas[i] = Prompt.lerDecimal("Digite a nota " + (i + 1) + ": ");
+            notas[i] = Prompt.lerDecimal("Digite a nota " + (i + 1) + ": ");
+            aluno.setNotas(notas);
         }
 
-        aluno.media = (aluno.notas[0] * 2 + aluno.notas[1] * 3 + aluno.notas[2] * 5) / 10.0;
-        aluno.classificacao = Aluno.classificacao(aluno.media);
+        double media = (aluno.getNotas()[0] * 2 + aluno.getNotas()[1] * 3 + aluno.getNotas()[2] * 5) / 10.0;
+        aluno.setMedia(media);
+        Aluno.classificacao(aluno.getMedia());
 
-        System.out.printf("Nome: %s\nNúmero de matricula: %s\nNota final: %.2f\nClassificação: %c\n", aluno.nome, aluno.matricula, aluno.media, aluno.classificacao);
+        System.out.printf("Nome: %s\nNúmero de matricula: %s\nNota final: %.2f\nClassificação: %c\n", aluno.getNome(), aluno.getMatricula(), aluno.getMedia(), aluno.getClassificacao());
+        
         Prompt.separador();
         
     }
