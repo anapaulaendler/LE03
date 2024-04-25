@@ -16,7 +16,7 @@ public class Exercicio01 {
         for (int i = 0; i < 3; i++) {
             nota[i] = Prompt.lerDecimal("Digite sua nota: ");
             alunoUm.setNotas(nota);
-            media += nota[i];
+            media += alunoUm.getNotas()[i];
         }
 
         System.out.printf("A média do aluno %s é: %.2f\n", alunoUm.getNome(), (media/3f));
