@@ -3,7 +3,7 @@ import br.edu.up.dominio.Seguradora;
 
 public class Exercicio26 {
     public static void executar() {
-        
+
         /* . Uma seguradora possui nove categorias de seguro baseadas na idade e ocupação do segurado.
         Somente pessoas com pelo menos 17 anos e não mais que 70 anos podem adquirir apólices de
         seguro. Quanto às classes de ocupações, foram definidos três grupos de risco: baixo, médio e alto.
@@ -13,16 +13,22 @@ public class Exercicio26 {
         em nenhuma das categorias ofertadas. */
 
         Seguradora cliente = new Seguradora();
-        cliente.nome = Prompt.lerLinha("Digite seu nome: ");
-        cliente.idade = Prompt.lerInteiro("Digite sua idade: ");
-        cliente.risco = Prompt.lerLinha("Digite seu nível de risco (baixo, medio, alto): ");
 
-        if (cliente.idade < 17 || cliente.idade > 70) {
+        String nome = Prompt.lerLinha("Digite seu nome: ");
+        cliente.setNome(nome);
+
+        int idade = Prompt.lerInteiro("Digite sua idade: ");
+        cliente.setIdade(idade);
+
+        String risco = Prompt.lerLinha("Digite seu nível de risco (baixo, medio, alto): ");
+        cliente.setRisco(risco);
+
+        if (cliente.getIdade() < 17 || cliente.getIdade() > 70) {
             System.out.println("Idade inválida.");
         } else {
-            cliente.id = cliente.classificar();
+            cliente.setId(cliente.classificar());
 
-            System.out.printf("Nome: %s\nÍndice de risco: %s\nIdade: %d\nCategoria: %d\n", cliente.nome, cliente.risco, cliente.idade, cliente.id);
+            System.out.printf("Nome: %s\nÍndice de risco: %s\nIdade: %d\nCategoria: %d\n", cliente.getNome(), cliente.getRisco(), cliente.getIdade(), cliente.getId());
         }
 
         Prompt.separador();
