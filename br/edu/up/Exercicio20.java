@@ -9,13 +9,18 @@ public class Exercicio20 {
         Professor Nível 2 R$17,00 por hora/aula
         Professor Nível 3 R$25,00 por hora/aula */
 
-        
         Funcionario professor = new Funcionario();
-        professor.horas = Prompt.lerInteiro("Informe a quantidade de horas trabalhadas: ");
-        professor.nivel = Prompt.lerInteiro("Informe o nível do professor (1, 2, 3): ");
+
+        int horas = Prompt.lerInteiro("Informe a quantidade de horas trabalhadas: ");
+        professor.setHoras(horas);
+
+        int nivel = Prompt.lerInteiro("Informe o nível do professor (1, 2, 3): ");
+        professor.setNivel(nivel);
+
         double salario = professor.pagamento();
 
         System.out.printf("O salário do professor é de: R$ %.2f\n", salario);
+        
         Prompt.separador();
 
     }
