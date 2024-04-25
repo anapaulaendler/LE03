@@ -14,20 +14,27 @@ public class Exercicio12 {
         char opcao = 'S';
         Concessionaria concessionaria = new Concessionaria();
         Scanner scanner = new Scanner(System.in);
-        concessionaria.c2000 = 0;
-        concessionaria.cg = 0;
+        int c2000 = 0;
+        concessionaria.setC2000(c2000);
+        int cGeral = 0;
+        concessionaria.setCg(cGeral);
 
         while (opcao != 'N') {
 
-            concessionaria.ano = Prompt.lerInteiro("Informe o ano do carro: ");
-            concessionaria.preco = Prompt.lerDecimal("Informe o valor inicial: ");
-            concessionaria.desconto(concessionaria.ano, concessionaria.preco);
+            int ano = Prompt.lerInteiro("Informe o ano do carro: ");
+            concessionaria.setAno(ano);
+
+            double preco = Prompt.lerDecimal("Informe o valor inicial: ");
+            concessionaria.setPreco(preco);
+
+            concessionaria.desconto(concessionaria.getAno(), concessionaria.getPreco());
 
             System.out.println("Deseja continuar? Digite 'n' ou 'N' para sair: ");
             opcao = scanner.nextLine().toUpperCase().charAt(0);
+
         }
 
-        System.out.printf("O total de carros até o ano 2000: %d.\nTotal de carros: %d.\n", concessionaria.c2000, concessionaria.cg);
+        System.out.printf("O total de carros até o ano 2000: %d.\nTotal de carros: %d.\n", concessionaria.getC2000(), concessionaria.getCg());
         Prompt.separador();
     }
 }
