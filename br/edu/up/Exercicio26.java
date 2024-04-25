@@ -3,6 +3,7 @@ import br.edu.up.dominio.Seguradora;
 
 public class Exercicio26 {
     public static void executar() {
+        
         /* . Uma seguradora possui nove categorias de seguro baseadas na idade e ocupação do segurado.
         Somente pessoas com pelo menos 17 anos e não mais que 70 anos podem adquirir apólices de
         seguro. Quanto às classes de ocupações, foram definidos três grupos de risco: baixo, médio e alto.

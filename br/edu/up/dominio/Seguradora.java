@@ -2,11 +2,52 @@ package br.edu.up.dominio;
 
 public class Seguradora {
     
-    public String nome;
-    public String risco;
-    public int idade;
+    private String nome;
+    private String risco;
+    private int idade;
+    private int id;
 
-    public int id;
+    // métodos construtores:
+
+    public Seguradora() {
+    }
+
+    // getters e setters:
+
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getRisco() {
+        return risco;
+    }
+
+    public void setRisco(String risco) {
+        this.risco = risco;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    // funções:
 
     public int classificar() {
         if ("baixo".equalsIgnoreCase(risco)) {
