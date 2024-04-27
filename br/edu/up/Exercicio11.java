@@ -35,9 +35,9 @@ public class Exercicio11 {
 
     for (int i = 0; i < n; i++) {
         if (sexo[i] == 'F') {
-            System.out.println("Nome: " + pessoas.getNome() + " | Mulher");
+            System.out.println("Nome: " + pessoas.getNome()[i] + " | Mulher");
         } else if (sexo[i] == 'M') {
-            System.out.println("Nome: " + pessoas.getNome() + " | Homem");
+            System.out.println("Nome: " + pessoas.getNome()[i] + " | Homem");
         }
     }
 

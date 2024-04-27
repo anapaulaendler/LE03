@@ -51,10 +51,10 @@ public class Exercicio13 {
 
         for (int i = 0; i < n; i++) {
             if (candidato.apto(i)) {
-                System.out.println(candidato.getNome() + " está apto para o serviço militar.");
+                System.out.println(candidato.getNome()[i] + " está apto para o serviço militar.");
                 totalAptas++;
             } else {
-                System.out.println(candidato.getNome() + " não está apto para o serviço militar.");
+                System.out.println(candidato.getNome()[i] + " não está apto para o serviço militar.");
                 totalNaoAptas++;
             }
         }
