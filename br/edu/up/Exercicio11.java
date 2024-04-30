@@ -44,6 +44,5 @@ public class Exercicio11 {
     System.out.println("Quantidade total de homens: " + cM + ". Quantidade total de mulheres: " + cF + ".");
     Prompt.separador();
 
-    scanner.close();
 }
 }
